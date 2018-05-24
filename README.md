@@ -1,6 +1,9 @@
 # pacact
 Pacman game created with react
 
+[![pacman](https://github.com/maximobelen/assets/raw/master/images/pacact/react\ pacman.png)](https://github.com/maximobelen/assets/raw/master/images/pacact/react\ pacman.png)
+
+
 ## INSTALLATION DEPENDENCES
 ```javascript
 npm install
