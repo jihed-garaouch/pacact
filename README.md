@@ -1,10 +1,10 @@
 # pacact
 Pacman game created with react
 
-Take a look to the [Demo](http://maximobelen.com/pacact/)
+Take a look to the [Demo](https://jihed-garaoucht.github.io/pacact/)
 
 
-[![pacman](https://github.com/maximobelen/assets/raw/master/images/pacact/react-pacman.png)](https://github.com/maximobelen/assets/raw/master/images/pacact/react-pacman.png)
+[![pacman](https://github.com/jihed-garaouch/assets/raw/master/images/pacman-react/react-pacman.png)](https://github.com/jihed-garaouch/assets/raw/master/images/pacman-react/react-pacman.png)
 
 
 ## INSTALLATION DEPENDENCES
