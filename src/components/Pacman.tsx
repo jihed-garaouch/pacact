@@ -53,7 +53,9 @@ const Pacman = (props: Character) => {
         rotate(e.keyCode);
       }
     }
-
+    function gameRestarted() {
+      setColor(props.color);
+    }
     document.addEventListener("keydown", handleKeyDown, false);
     document.addEventListener("restart-game", gameRestarted);
 
@@ -61,11 +63,9 @@ const Pacman = (props: Character) => {
       document.removeEventListener("restart-game", gameRestarted);
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [props.color]);
 
-  function gameRestarted() {
-    setColor(props.color);
-  }
+
 
   function move() {
     if (gameStatus === GAME_STATUS.IN_PROGRESS) {

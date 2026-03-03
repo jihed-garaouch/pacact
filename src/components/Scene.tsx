@@ -85,7 +85,7 @@ const Scene = (props: SceneProps) => {
       );
 
     setFoodAmount(amountOfFood);
-  }, []);
+  }, [props,setFoodAmount]);
 
   return (
     <StyledScene>

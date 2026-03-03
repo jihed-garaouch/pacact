@@ -48,14 +48,15 @@ const Ghost = (props: Character) => {
   useInterval(move, 100);
 
   React.useEffect(() => {
+    function gameRestarted() {
+      setColor(props.color);
+      setPosition(ghostStartPosition);
+    }
+
     document.addEventListener("restart-game", gameRestarted);
     return () => document.removeEventListener("restart-game", gameRestarted);
-  }, []);
+  }, [props.color]);
 
-  function gameRestarted() {
-    setColor(props.color);
-    setPosition(ghostStartPosition);
-  }
 
   function move() {
     if (gameStatus === GAME_STATUS.IN_PROGRESS) {

@@ -55,7 +55,7 @@ const Food = (props: FoodProps) => {
       }
       setPoints(points + 1);
     }
-  }, [pacmanPosition, position]);
+  }, [points,pacmanPosition, position,foodAmount,isHidden,setGameStatus,setPoints,props.pacmanSize]);
 
   return (
     <StyledFood position={props.position} hidden={isHidden}>
